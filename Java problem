@@ -114,8 +114,8 @@ public class sumofnumbers {
         int n = sc.nextInt();
         int sum = 0;
         while(n>0){
-            sum += n%10;
-            n/=10;}
+            sum += n%10; // add number to the sum 
+            n/=10;} // new n value
             
             System.out.println(sum);
         }
