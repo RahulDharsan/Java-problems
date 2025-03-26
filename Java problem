@@ -1,0 +1,81 @@
+1️.Print the factorial of a given number (n!)
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n=sc.nextInt();
+        int fact = 1 ;
+        System.out.println("Enter the number:");
+        for(int i = 1 ; i<=n;i++)
+        fact *= i;
+        System.out.println(fact);
+    }
+}
+ 
+2️.Check if a number is prime
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n=sc.nextInt();
+        boolean isPrime = true;
+        if(n<=1){
+            isPrime=false;
+        }
+        else{
+            for(int i = 2 ;i<n;i++){
+                if(n%i==0){
+                    isPrime = false ;
+                    break;
+                }
+            }
+        }
+        if(isPrime){
+            System.out.println(n +"NUMBER IS PRIME ");
+        }
+        else{
+              System.out.println(n + " NUMBER IS  Not PRIME ");
+        }    
+        }
+        }
+		
+		
+3️.Reverse a given number		
+import java.util.Scanner;
+
+public class ReverseStringMethod {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        String num = sc.next(); 
+        sc.close();
+
+        String reversed = new StringBuilder(num).reverse().toString(); // Reverse string
+
+        System.out.println("Reversed Number: " + reversed);
+    }
+}
+
+4️.Check if a number is palindrome
+import java.util.Scanner;
+
+public class palindrome{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        String num = sc.next(); // Read number as a string
+        sc.close();
+
+        String reversed = new StringBuilder(num).reverse().toString(); // Reverse the string
+
+        // Check if the original and reversed strings are equal
+        if (num.equals(reversed)) {
+            System.out.println(num + " is a Palindrome.");
+        } else {
+            System.out.println(num + " is Not a Palindrome.");
+        }
+    }
+}
