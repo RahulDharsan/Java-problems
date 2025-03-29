@@ -80,6 +80,29 @@ public class palindrome{
     }
 }
 
+// OR 
+
+class Main {
+    public static void main(String[] args) {
+        String n= "121";
+        String r="";
+        for(int i =n.length()-1;i>=0;i--){
+            r=r+n.charAt(i) ;
+        }
+             System.out.print(r);
+            
+            if(n.equals(r)){
+                 System.out.print(" palindrome");
+            }
+            else{
+                 System.out.print(" Not palindrome");
+            }
+            }
+            
+         
+        }
+
+
 5️. Print Fibonacci series up to n terms
 
 import java.util.Scanner;
